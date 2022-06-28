@@ -1,0 +1,134 @@
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #E46C45;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #ff5b24;
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    background-color: #FDF5EE !important;
+}
+
+#todo-input {
+    width: 80%;
+}
+
+#Items-wrap {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+#Items-List {
+    /* width: 50vw; */
+    border: 0.4rem solid #0040BC;
+    border-radius: 1rem;
+}
+
+#Item {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1rem;
+    background-color: #0040BC;
+    border-radius: 1rem;
+    color: #FFFFFF;
+    font-size: clamp(0.50rem, calc(0.12rem + 1.57vw), 1.5rem);
+    font-weight: 600;
+}
+
+.countdown {
+    display: flex;
+    color: #E46C45;
+    font-weight: 700;
+    text-align: center;
+}
+
+.container-year,
+.container-week,
+.container-day {
+    display: flex;
+    padding: 0.2em 0;
+}
+
+p {
+    padding: 0.2rem;
+    margin-bottom: 0 !important;
+}
+
+button {
+    width: 15vw;
+    display: inline-block;
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+    background-color: #E46C45;
+    box-shadow: 0 7px 0 #BF4D29;
+    border: none;
+    text-decoration: none;
+    border-radius: 1rem !important;
+    color: #FFFFFF;
+    font-size: clamp(0.50rem, calc(0.06rem + 1.80vw), 1.50rem) !important;
+}
+
+button:active {
+    box-shadow: none;
+    transform: translateY(7px);
+}
+
+#ExpiredDate,
+#ItemName,
+button {
+    margin-right: 2rem;
+}
+
+form {
+    background-color: #0040BC;
+    padding: 1rem;
+    border-radius: 1em;
+    box-shadow: 0 10px 0 #192B9A;
+}
+
+input {
+    width: 80%;
+    outline: none;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    color: #000;
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    transition: 0.5s;
+    border-radius: 50px;
+    background: #FFF;
+}
+
+#ExpiredDate,
+::placeholder {
+    color: #E46C45;
+}
+
+.bad-btn {
+    width: clamp(1rem, calc(-0.67rem + 5.84vw), 4.00rem);
+    ;
+}
+
+@media screen and (max-width: 850px) {
+    button {
+        width: 25vw;
+    }
+}
+@media screen and (max-width: 550px) {
+    button {
+        width: 35vw;
+    }
+    #todo-input {
+        width: 60vw;
+    }
+}
