@@ -21,6 +21,11 @@ body {
     width: 80%;
 }
 
+#todo-input > img{
+    width: 10vw;
+    margin-right: 3em;
+}
+
 #Items-wrap {
     height: 80vh;
     display: flex;
